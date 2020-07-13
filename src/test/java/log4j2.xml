@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration status="OFF">
+	<appenders>
+		<Console name="Console" target="SYSTEM_OUT">
+			<PatternLayout pattern="%p %d %c (%F:%L) - %m %n" />
+		</Console>
+	</appenders>
+	<Loggers>
+		<Logger name="org.springframework" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="org.apache.axis" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="org.apache.commons" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>		
+		<Logger name="org.apache.http.impl.conn" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="org.apache.ibatis.logging.jdbc" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>		
+		<Logger name="org.mybatis.spring.SqlSessionUtils" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="org.mybatis.spring.transaction.SpringManagedTransaction" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="com.toanddo" level="debug" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>
+		<Logger name="com.google" level="debug" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>			
+		<Logger name="com.toanddo.rest.repository" level="error" additivity="false">
+			<AppenderRef ref="Console" />
+		</Logger>		
+		<Root level="debug">
+			<AppenderRef ref="Console" />
+		</Root>
+	</Loggers>
+</configuration>
